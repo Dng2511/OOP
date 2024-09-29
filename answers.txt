@@ -1,0 +1,13 @@
+6.1 
+- Khi chọn "Cancel" dialog hiện "You've chosen: No"
+- Để xóa custom option ta đổi option thành 
+        int option = JOptionPane.showOptionDialog(null,  
+                        "Do you want to change to the first class ticket?",  
+                        null,  
+                        JOptionPane.DEFAULT_OPTION,  
+                        JOptionPane.QUESTION_MESSAGE,  
+                        null,   // No icon  
+                        options, // Custom options  
+                        options[0] // Default button  
+                );
+với options là String[] options = {"Yes", "No"};
